@@ -104,7 +104,6 @@ for(let j=0; j < tableChildren.length -1; j++){
         const columnBChildren = Array.from(columnB.children)
         const C1R2 = columnBChildren[0]
         C1R2.setAttribute('id','second')
-        const second = document.getElementById('second')
-        second.style.padding = "10px"
+        C1R2.style.paddingLeft = "0px"
     }
 }
