@@ -96,11 +96,11 @@ for(let j=0; j < tableChildren.length -1; j++){
 
     // loops through the children of the children of the table
     for(let i=0; i < row1Children.length; i++){
-        let currentTag1 = row1Children[i]
-        console.log(currentTag1)
-        currentTag1.setAttribute('id',`row{j}-cell{i}`)
-        currentTag1.style.padding = "10px"
+        let currentTag1 = row1Children[i] // assigns currentTag to the value of the current child
+        currentTag1.setAttribute('id',`row{j}-cell{i}`) // finds the child using the row and columns
+        currentTag1.style.padding = "10px" // add padding to the current child
 
+        // remove padding to Chevrolet because it looked uneven
         const columnBChildren = Array.from(columnB.children)
         const C1R2 = columnBChildren[0]
         C1R2.setAttribute('id','second')
